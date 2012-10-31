@@ -1,0 +1,179 @@
+body {
+	border-top: 2px solid #fff;
+  background-color: #F6F4EC;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D7D3C8), to(#F6F4EC));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #D7D3C8, #F6F4EC); 
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #D7D3C8, #F6F4EC); 
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #D7D3C8, #F6F4EC); 
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #D7D3C8, #F6F4EC);
+
+  color: #333;
+  font-size: 11px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: 100;
+  padding-top: 40px;
+  text-align: left;
+   margin-bottom:0px;
+}
+
+h2 {
+  padding-top: 20px;
+	margin-top:20px;
+  text-align: left;
+  font-weight: normal;
+  font-family: OpenSans-Regular;
+}
+
+p {
+  overflow: hidden;
+  padding: 11px 0;
+  text-align: center;
+}
+
+/*.container_12,
+.container_16,
+.container_24 {
+  background-color: #fff;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+}*/
+
+/*.container_12 {
+  background-image: url(../img/12_col.gif);
+}
+
+.container_16 {
+  background-image: url(../img/16_col.gif);
+}
+
+.container_24 {
+  background-image: url(../img/24_col.gif);
+}*/
+
+#output {
+  position: relative;
+}
+
+#feedback-images {
+  height: 150px;
+  position: absolute;
+  top: 240px;
+  width: 940px;
+}
+
+#feedback-output {
+  color: white;
+  padding: 0;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+
+
+
+
+
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+    border: 3px solid #eee;
+    float: left;
+    height: 299px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 332px;
+    left: -20px;
+    position: relative;
+    top: -20px;
+    width: 500px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 14px;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.45em;
+        font-weight: normal;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+.dark-background-red {
+    background-color: rgba(195, 52, 27, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+.dark-background-blue {
+    background-color: rgba(48, 112, 170, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+
+
+/**
+ * You could create multiple hover background classes for different looks depending on the
+ * image type. Use your imagination!
+ */
+

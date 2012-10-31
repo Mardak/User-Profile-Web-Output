@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Firefox User Profile</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script type="text/javascript" src="script/demo.js"></script>
+<script type="text/javascript" src="script/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="script/effects.js"></script>
+<script type="text/javascript" src="script/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="script/jquery-ui.js"></script>
+<script type="text/javascript" src="script/processing.js"></script>
+<script type="text/javascript" src="script/imageData.js"></script>
+<script type="text/javascript" src="script/images.js"></script>
+<script type="text/javascript" src="script/jquery.simpletip-1.3.1.js"></script>
+</head>
+<body>
+	
+	<!-- Interest output: <input type="text" id="amount2" style="border: 0; color: #f6931f; font-weight: bold;" /> -->
+	
+<div class="container_12">
+  <div class="grid_12">
+    <h1>
+      User Profile
+    </h1>
+	<div id="privacy-text">
+		User Profile is a Firefox tool to view and manage your demographic and interest information based on your browsing history.
+	</div>
+	<div class="divider"></div>
+  </div>
+
+  <div class="clear"></div>
+	<div id="interests" class="grid_4">
+	    <h2>
+	      Your Demographics &amp; Interests
+	    </h2>
+		<div id="privacy-text">
+			Control the level of information you reveal to websites and advertisers.
+		</div>	
+		<div id="interest-grid">
+			
+			<div id="interests-demographics">
+				<!-- <ul id="demog">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul> -->
+				<ul id="demog">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest1">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest2">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest3">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest4">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest5">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				<ul id="interest6">
+					<li class="level1"></li>
+					<li class="level2"></li>
+					<li class="level2"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+					<li class="level3"></li>
+				</ul>
+				
+			</div>
+			
+			
+			<div id="slider-horizontal"></div>
+			
+			<!-- <div id="slider2">
+							  <div id="demographic" class="demographic-style fade"></div>
+					          
+							  <div id="interest-1-1" class="level-1 fade"></div>
+							  <div id="interest-2-1" class="level-1 fade"></div>
+							  <div id="interest-3-1" class="level-1 fade"></div>
+							  <div id="interest-4-1" class="level-1 fade"></div>
+					          <div id="interest-5-1" class="level-1 fade"></div>
+					          <div id="interest-6-1" class="level-1 fade"></div>
+
+							  <div id="interest-1-2" class="level-2 fade"></div>
+							  <div id="interest-1-2" class="level-2 fade"></div>
+
+					          <div id="interest-2-2" class="level-2 fade"></div>
+							  <div id="interest-2-2" class="level-2 fade"></div>
+
+					          <div id="interest-3-2" class="level-2 fade"></div>
+							  <div id="interest-3-2" class="level-2 fade"></div>
+
+					          <div id="interest-4-2" class="level-2 fade"></div>
+							  <div id="interest-4-2" class="level-2 fade"></div>
+
+					          <div id="interest-5-2" class="level-2 fade"></div>
+							  <div id="interest-5-2" class="level-2 fade"></div>
+
+					          <div id="interest-6-2" class="level-2 fade"></div>
+							  <div id="interest-6-2" class="level-2 fade"></div>
+
+							  <div id="interest-1-3" class="level-3 fade"></div>
+							  <div id="interest-1-3" class="level-3 fade"></div>
+							  <div id="interest-1-3" class="level-3 fade"></div>
+							  <div id="interest-1-3" class="level-3 fade"></div>
+
+					          <div id="interest-2-3" class="level-3 fade"></div>
+							  <div id="interest-2-3" class="level-3 fade"></div>
+							  <div id="interest-2-3" class="level-3 fade"></div>
+							  <div id="interest-2-3" class="level-3 fade"></div>
+
+							  <div id="interest-3-3" class="level-3 fade"></div>
+							  <div id="interest-3-3" class="level-3 fade"></div>
+							  <div id="interest-3-3" class="level-3 fade"></div>
+							  <div id="interest-3-3" class="level-3 fade"></div>
+
+							  <div id="interest-4-3" class="level-3 fade"></div>
+							  <div id="interest-4-3" class="level-3 fade"></div>
+							  <div id="interest-4-3" class="level-3 fade"></div>
+							  <div id="interest-4-3" class="level-3 fade"></div>
+
+							  <div id="interest-5-3" class="level-3 fade"></div>
+							  <div id="interest-5-3" class="level-3 fade"></div>
+							  <div id="interest-5-3" class="level-3 fade"></div>
+							  <div id="interest-5-3" class="level-3 fade"></div>
+
+							  <div id="interest-6-3" class="level-3 fade"></div>
+							  <div id="interest-6-3" class="level-3 fade"></div>
+							  <div id="interest-6-3" class="level-3 fade"></div>
+							  <div id="interest-6-3" class="level-3 fade"></div>
+
+							  <div id="handle-bg" class="fade"></div>
+
+						</div>  -->
+
+		</div>
+
+		<div id="slide-screen"></div>
+	  </div>
+	  <!-- end .grid_8 -->
+
+
+
+  <div id="output" class="grid_8">
+		<h2>
+	      Sample web content &amp; ads
+	    </h2>
+		<div id="output-text">
+			Here is a representation of how the information you reveal on the left (Demographics &amp; Interests) can personalize your web experience.
+		</div>
+	
+  	<div id="image-grid">
+		<div id="sample-text">
+			<div id="text1">Lorem</div>
+			
+			<div id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			
+			<div id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sagittis felis vitae sagittis. Aenean rhoncus lacinia libero et porta. In hac habitasse platea dictumst. Nunc placerat cursus lacus non congue. Morbi erat nisi, dapibus id condimentum vel, bibendum nec est.</div>
+			
+			<div id="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			
+			<div id="text5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+			
+			<div id="text6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sagittis felis vitae sagittis. Aenean rhoncus lacinia libero et porta.</div>
+		</div>
+		
+		<div class="image400x140 viewport">
+		    <a href="#">
+		        <span class="dark-background-red">Automobiles</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		<div class="image160x276 viewport">
+		    <a href="#">
+		        <span class="dark-background-blue">Fashion</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		<div class="image170x144 viewport">
+		    <a href="#">
+		        <span class="dark-background">Computers</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		<div class="image130x67a viewport">
+		    <a href="#">
+		        <span class="dark-background">Sports</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		<div class="image130x67b viewport">
+		    <a href="#">
+		        <span class="dark-background">Travel</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		<div class="image160x60 viewport">
+		    <a href="#">
+		        <span class="dark-background">Consumer goods</span>
+		        <img src="http://www.theautochannel.com/news/2007/12/26/074045.1-lg.jpg" alt="Automobile" />
+		    </a>
+		</div>
+		
+
+		<!-- <div id="no-data">You are hiding your demographic and interest data.</div> -->
+	</div>
+  </div>
+  <!-- end .grid_12 -->
+  
+  <div class="clear"></div>
+  </div>
+<!-- end .container_12 -->
+
+
+
+
+</body>
+</html>
