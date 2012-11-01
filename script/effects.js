@@ -54,16 +54,37 @@ $(document).ready(function(){
 		            max: 100,
 		            value: 37,
 		            slide: function(event, ui) {
-							if (ui.value == 0) {
+							if (ui.value <= 25) {
+								shareLevel = 0;
+
 								// turn off all levels
 								$("li.level1").stop().animate({opacity: "0.3"}, 120);
-								
+								$("li.level2").stop().animate({opacity: "0.3"}, 120);
+								$("li.level3").stop().animate({opacity: "0.3"}, 120);
 							}
-							
-							if (ui.value == 37) {
-								// turn off all levels
+							else if (ui.value <= 50) {
+								shareLevel = 1;
+
+								// turn off all levels except 1
 								$("li.level1").stop().animate({opacity: "1"}, 120);
-								
+								$("li.level2").stop().animate({opacity: "0.3"}, 120);
+								$("li.level3").stop().animate({opacity: "0.3"}, 120);
+							}
+							else if (ui.value <= 75) {
+								shareLevel = 2;
+
+								// turn off all levels except 2
+								$("li.level1").stop().animate({opacity: "0.3"}, 120);
+								$("li.level2").stop().animate({opacity: "1"}, 120);
+								$("li.level3").stop().animate({opacity: "0.3"}, 120);
+							}
+							else {
+								shareLevel = 3;
+
+								// turn off all levels except 3
+								$("li.level1").stop().animate({opacity: "0.3"}, 120);
+								$("li.level2").stop().animate({opacity: "0.3"}, 120);
+								$("li.level3").stop().animate({opacity: "1"}, 120);
 							}
 							
 					},
