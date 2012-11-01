@@ -1,9 +1,6 @@
 const IMAGE_SIZE = 100;
 
 $(document).ready(function(){
-  for (var i = 0; i < 10000; i += 2000) {
-    setTimeout(makeImage, i);
-  }
 });
 
 function pickImage() {
