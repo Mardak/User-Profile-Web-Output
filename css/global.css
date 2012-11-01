@@ -3,7 +3,7 @@
 
 #slider-settings {
 	position:absolute;
-	top:850px;
+	top:530px;
 }
 
 #off {
@@ -171,7 +171,7 @@ a {
 }
 
 #output h2 {
-	padding: 20px 0px 0px 0px;
+	padding: 0;
 	color:#48463b;
 	text-shadow: 0px 1px 0px #fff;
 	font-size: 18px;
@@ -187,9 +187,10 @@ a {
 #image-grid {
 	background-image:url('../images/browser-bg4.png');
 	background-repeat: no-repeat;
+        position: relative;
 	width:620px;
 	height:539px;
-	margin-top:20px;
+	margin-top: 10px;
 	-moz-box-shadow: 0px 0px 2px #646158;
 	-webkit-box-shadow: 0px 0px 2px #646158;
 	box-shadow: 0px 0px 2px #646158;
@@ -285,21 +286,21 @@ a {
   text-shadow: none;
 	position:absolute;
 	font-size: 16px;
-	top:215px;
+	top: 70px;
 	left: 18px;
 }
 
 #sample-text #text2 {
 	position:absolute;
 	font-size: 10px;
-	top:400px;
+	top: 255px;
 	left: 18px;
 }
 
 #sample-text #text3 {
 	position:absolute;
 	font-size: 10px;
-	top:580px;
+	top: 435px;
 	left: 18px;
 	width:400px;
 }
@@ -307,7 +308,7 @@ a {
 #sample-text #text4 {
 	position:absolute;
 	font-size: 10px;
-	top:425px;
+	top: 280px;
 	left: 340px;
 	width: 80px;
 }
@@ -315,7 +316,7 @@ a {
 #sample-text #text5 {
 	position:absolute;
 	font-size: 10px;
-	top:500px;
+	top: 355px;
 	left: 340px;
 	width: 80px;
 }
@@ -324,7 +325,7 @@ a {
 #sample-text #text6 {
 	position:absolute;
 	font-size: 10px;
-	top:645px;
+	top:500px;
 	left: 18px;
 }
 
@@ -694,7 +695,7 @@ ul#demo-tooltip li {
 }
 
 #interests h2 {
-	padding: 20px 0px 0px 0px;
+	padding: 0;
 	color:#48463b;
 	text-shadow: 0px 1px 0px #fff;
 	font-size: 18px;
@@ -705,6 +706,7 @@ ul#demo-tooltip li {
 #interest-grid{
 	/*background-image:url('../images/grid-tile.png');*/
 	background: radial-gradient(ellipse farthest-corner at center 45px , rgb(245, 241, 232) 0px, rgb(255, 255, 255) 100%) repeat scroll 0% 0% rgb(255, 255, 255);
+        position: relative;
 	height:563px;
 	margin-top:10px;
 	padding:0px 0px 0px 0px;
