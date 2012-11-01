@@ -13,7 +13,7 @@
 
 #coarse {
 	float:left;
-	margin:10px 10px 10px 34px;
+	margin:10px 10px 10px 37px;
 }
 
 #slider-settings #medium {
@@ -360,8 +360,48 @@ a {
 	top: 520px;
 	left:10px;
 	width:277px;
+	z-index:3;
 }
 
+#off-line {
+	width:1px;
+	height:23px;
+	background:#595b65;
+	position: relative;
+	top:503px;
+	left:45px;
+	z-index:2;
+}
+
+#coarse-line {
+	width:1px;
+	height:23px;
+	background:#595b65;
+	position: relative;
+	top:480px;
+	left:114px;
+	z-index:2;
+}
+
+#medium-line {
+	width:1px;
+	height:23px;
+	background:#595b65;
+	position: relative;
+	top:457px;
+	left:184px;
+	z-index:2;
+}
+
+#fine-line {
+	width:1px;
+	height:23px;
+	background:#595b65;
+	position: relative;
+	top:434px;
+	left:253px;
+	z-index:2;
+}
 
 
 
