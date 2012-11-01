@@ -1,6 +1,16 @@
 /*master css guides*/
 
 
+#empty-cell {
+	height:493px;
+	width:69px;
+	background:#ebe8dd;
+	float:left;
+	margin-left:11px;
+	margin-top:13px;
+}
+
+
 .fade {
    opacity: 1;
    transition: opacity .25s ease-in-out;
