@@ -358,8 +358,8 @@ a {
 	
 	position: relative;
 	top: 520px;
-	left:8px;
-	width:280px;
+	left:10px;
+	width:277px;
 }
 
 
@@ -537,7 +537,7 @@ ul#interest6 {
 }
 
 .level2 {
-	padding:20px 17px 20px 17px;
+	padding:20px 16.8px 20px 16.8px;
 	display:block;
 	margin:1px .1px 1px 1px;
 	opacity:.2;
