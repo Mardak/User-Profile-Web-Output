@@ -275,7 +275,14 @@ a {
 }
 
 
+#sample-text > div {
+  color: transparent;
+  text-shadow: 0 0 3px black;
+}
+
 #sample-text #text1 {
+  color: inherit;
+  text-shadow: none;
 	position:absolute;
 	font-size: 16px;
 	top:215px;
