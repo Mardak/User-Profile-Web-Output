@@ -1,20 +1,31 @@
 var shareLevel = 1;
 
 
-// my custom tooltip
-function tooltip() {
-	// create tooltip
-	$('<p id="test">My <em>new</em> text</p>').appendTo('body').animate({opacity: "0.0"}, 1020);
-	
-	//animate tooltip
-	
-	//hide tooltip
+// var imgs = [new Image(), new Image()];
+// imgs[0].src = "https://sitesuggest.mozillalabs.com/images/test.png";
+// imgs[1].src = "https://sitesuggest.mozillalabs.com/images/proto-up/images/sports.jpg";
+
+var next = 1;
+function doFlip() {
+  var img = document.getElementsByClassName('viewport');
+  img.style.transform = "rotateY(90deg)";
+
+  img.addEventListener("transitionend", function once() {
+    img.removeEventListener("transitionend", once);
+    img.src = imgs[next].src;
+    img.style.transform = "";
+    next = +!next;
+  });
 }
 
 
 $(document).ready(function(){
 	
+	//do first Flip onLoad
+	// doFlip();
+
 	
+		
 	//Hover over images
     $('.viewport').mouseenter(function(e) {
         $(this).children('a').children('img').animate({ height: '299', left: '0', top: '0', width: '450'}, 100);
@@ -28,17 +39,18 @@ $(document).ready(function(){
 		tooltip();
 		$("ul#interest1 li.level1").stop().animate({opacity: "0.8"}, 120);
 	}, function() {
+		removetooltip();
 		$("ul#interest1 li.level1").stop().animate({opacity: "1"}, 120);
 	});
 	
 	$("ul#interest1 li.level1").hover(function(e) {
-		$("ul#interest1 li.level1").css("cursor", "pointer");
+		// $("ul#interest1 li.level1").css("cursor", "move");
 		$("ul#interest1 li.level1").stop().animate({opacity: "0.8"}, 120);
         $(".image400x140").children('a').children('img').animate({ height: '299', left: '0', top: '0', width: '450'}, 100);
-        $(".image400x140").children('a').children('span').fadeIn(200);
+        $(".image400x140").children('a').children('span').fadeIn(200, "linear");
     }).mouseleave(function(e) {
         $(".image400x140").children('a').children('img').animate({ height: '332', left: '-20', top: '-20', width: '500'}, 100);
-        $(".image400x140").children('a').children('span').fadeOut(200);
+        $(".image400x140").children('a').children('span').fadeOut(200, "linear");
 		$("ul#interest1 li.level1").stop().animate({opacity: "1"}, 120);
     });
 
