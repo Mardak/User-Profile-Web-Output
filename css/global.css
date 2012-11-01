@@ -1,6 +1,31 @@
 /*master css guides*/
 
 
+#slider-settings {
+	position:absolute;
+	top:850px;
+}
+
+#off {
+	float:left;
+	margin:10px 10px 10px 34px;
+}
+
+#coarse {
+	float:left;
+	margin:10px 10px 10px 34px;
+}
+
+#slider-settings #medium {
+	float:left;
+	margin:10px 10px 10px 24px;
+}
+
+#slider-settings #fine {
+	float:left;
+	margin:10px 10px 10px 24px;
+}
+
 #empty-cell {
 	height:493px;
 	width:69px;
@@ -332,7 +357,7 @@ a {
 	border:1px solid #fff;
 	
 	position: relative;
-	top: 517px;
+	top: 520px;
 	left:8px;
 	width:280px;
 }
@@ -630,7 +655,7 @@ ul#demo-tooltip li {
 #interest-grid{
 	/*background-image:url('../images/grid-tile.png');*/
 	background: radial-gradient(ellipse farthest-corner at center 45px , rgb(245, 241, 232) 0px, rgb(255, 255, 255) 100%) repeat scroll 0% 0% rgb(255, 255, 255);
-	height:540px;
+	height:563px;
 	margin-top:10px;
 	padding:0px 0px 0px 0px;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgb(255, 255, 255);
