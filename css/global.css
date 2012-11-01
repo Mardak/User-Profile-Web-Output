@@ -363,6 +363,11 @@ a {
 	z-index:3;
 }
 
+#slider-horizontal > a {
+  transition-property: left;
+  transition-duration: 0.1s;
+}
+
 #off-line {
 	width:1px;
 	height:23px;
@@ -402,8 +407,6 @@ a {
 	left:253px;
 	z-index:2;
 }
-
-
 
 #interests-demographics {
 	float:right;
