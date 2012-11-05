@@ -196,85 +196,107 @@ a {
 	box-shadow: 0px 0px 2px #646158;
 }
 
-
-.image400x140 {
-	width:400px;
-	height:140px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: 99px;
-	left:19px;
+#colorer {
+  opacity: .2;
+  position: absolute;
+  width: 620px;
+  height: 474px;
+  top: 64px;
+  transition-property: background;
+  transition-duration: 1s;
 }
 
-.image160x276 {
-	width:160px;
-	height:276px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: 98px;
-	left:30px;
+#image400x140 {
+  top: 99px;
+  left: 19px;
+}
+#image400x140, #image400x140 div {
+  width: 400px;
+  height: 140px;
+}
+#image400x140 div {
+  background-size: 450px 450px;
+  background-position: -25px -155px;
+}
+#image400x140 div:hover {
+  background-size: 400px 400px;
+  background-position: 0 -130px;
 }
 
-.image170x144 {
-	width:170px;
-	height:144px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: -11px;
-	left:19px;
+#image160x276 {
+  top: 98px;
+  left: 30px;
+}
+#image160x276, #image160x276 div {
+  width: 160px;
+  height: 276px;
+}
+#image160x276 div {
+  background-size: 326px 326px;
+  background-position: -83px -25px;
+}
+#image160x276 div:hover {
+  background-size: 276px 276px;
+  background-position: -58px 0px;
 }
 
-.image130x67a {
-	width:130px;
-	height:67px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: -11px;
-	left: 19px;
+#image170x144 {
+  top: -11px;
+  left: 19px;
+}
+#image170x144, #image170x144 div {
+  width: 170px;
+  height: 144px;
+}
+#image170x144 div {
+  background-size: 220px 220px;
+  background-position: -25px -38px;
+}
+#image170x144 div:hover {
+  background-size: 170px 170px;
+  background-position: 0px -13px;
 }
 
-.image130x67b {
-	width:130px;
-	height:67px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: 66px;
-	left: -122px;
+#image130x67a {
+  top: -11px;
+  left: 19px;
+}
+#image130x67b {
+  top: 66px;
+  left: -122px;
+}
+#image130x67a, #image130x67a div,
+#image130x67b, #image130x67b div {
+  width: 130px;
+  height: 67px;
+}
+#image130x67a div,
+#image130x67b div {
+  background-size: 180px 180px;
+  background-position: -25px -56px;
+}
+#image130x67a div:hover,
+#image130x67b div:hover {
+  background-size: 130px 130px;
+  background-position: 0px -31px;
 }
 
-.image160x60 {
-	width:160px;
-	height:60px;
-	background:#f6f4ec;
-	-moz-box-shadow: 0px 0px 2px #646158;
-	-webkit-box-shadow: 0px 0px 2px #646158;
-	box-shadow: 0px 0px 2px #646158;
-	border:1px solid #000;
-	position:relative;
-	top: 25px;
-	left:260px;
+#image160x60 {
+  top: 25px;
+  left: 260px;
 }
-
+#image160x60, #image160x60 div {
+  width: 160px;
+  height: 60px;
+}
+#image160x60 div {
+  background-size: 210px 210px;
+  background-position: -25px -75px;
+}
+#image160x60 div:hover {
+  background-size: 160px 160px;
+  background-position: 0px -50px;
+}
 
 #sample-text > div {
   color: transparent;
@@ -288,6 +310,14 @@ a {
 	font-size: 16px;
 	top: 70px;
 	left: 18px;
+}
+#sample-text #text1 span {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: opacity, transform;
+  transition-duration: 1s, 0.5s;
 }
 
 #sample-text #text2 {
@@ -473,11 +503,13 @@ ul#interest1 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(218, 81, 50), rgb(169, 19, 0));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest1 li, .interest1 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(218, 81, 50), rgb(169, 19, 0));
 }
 
 ul#interest2 {
@@ -494,11 +526,13 @@ ul#interest2 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(119, 173, 42), rgb(50, 100, 11));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest2 li, .interest2 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(119, 173, 42), rgb(50, 100, 11));
 }
 
 #interest3{
@@ -514,11 +548,13 @@ ul#interest3 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(59, 134, 201), rgb(37, 92, 142));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest3 li, .interest3 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(59, 134, 201), rgb(37, 92, 142));
 }
 
 #interest4{
@@ -534,11 +570,13 @@ ul#interest4 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(93, 55, 191), rgb(73, 41, 155));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest4 li, .interest4 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(93, 55, 191), rgb(73, 41, 155));
 }
 
 #interest5{
@@ -554,11 +592,13 @@ ul#interest5 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(179, 159, 51), rgb(136, 120, 33));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest5 li, .interest5 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(179, 159, 51), rgb(136, 120, 33));
 }
 
 #interest6{
@@ -574,11 +614,13 @@ ul#interest6 {
 	text-decoration:none;
 	width:100px;
 	color: rgb(255, 255, 255);
-	background-color: rgb(169, 19, 0);
-	background-repeat: repeat-x;
-	background-image: linear-gradient(rgb(43, 170, 145), rgb(28, 114, 97));
 	padding-top:24px;
 	padding-bottom:30px;
+}
+#interest6 li, .interest6 {
+  background-color: rgb(169, 19, 0);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(rgb(43, 170, 145), rgb(28, 114, 97));
 }
 
 .level1 {

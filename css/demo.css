@@ -94,13 +94,21 @@ p {
 
 /* --- Container configuration ---------------------------------------------------------- */
 .viewport {
-    border: 3px solid #eee;
-    float: left;
-    height: 299px;
-    margin: 0 9px 9px 0;
-    overflow: hidden;
-    position: relative;
-    width: 450px;
+  float: left;
+  height: 299px;
+  margin: 0 9px 9px 0;
+  position: relative;
+  width: 450px;
+  box-shadow: 0 0 2px #646158;
+  background: #f6f4ec;
+  border: 1px solid black;
+}
+
+.viewport div {
+  position: absolute;
+  opacity: 0;
+  transition-property: background-position, background-size, opacity, transform;
+  transition-duration: 0.2s, 0.2s, 1s, 0.5s;
 }
 
 /* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
